@@ -37,4 +37,4 @@ jobs:
             gpg --verify codecov-linux.SHA256SUM.sig codecov-linux.SHA256SUM
             shasum -a 256 -c codecov-linux.SHA256SUM
             chmod +x codecov-linux
-            ./codecov-linux -t 18362b60-86ca-4be2-a8cb-2bc94f4f0bd2 -F ${{ matrix.node-version }}
+            ./codecov-linux -t e3174856-90d5-42bc-91e5-b5f99ba6c1cf -F ${{ matrix.node-version }}
