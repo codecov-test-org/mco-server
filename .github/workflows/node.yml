@@ -34,7 +34,7 @@ jobs:
           -G \
           --header 'authorization: Bearer ${{ secrets.GITHUB_TOKEN }}' \
           --header 'content-type: application/json' \
-          --data-urlencode "q=${{ github.sha }} is:pull-request" \
+          --data-urlencode 'q=${{ github.sha }} is:pull-request' \
           --url 'https://api.github.com/repos/${{ github.repository }}/search/issues' \
           --fail
       - name: Codecov
